@@ -11,6 +11,8 @@
     <h1>Gestor de Turnos</h1>
     <form id="turnoForm">
 
+      <input type="hidden" id="editIndex" value="-1"> <!-- Campo oculto para saber si estamos editando -->
+
       <label for="dni">Dni:</label>
       <input type="text" id="dni" required>
 
@@ -26,7 +28,15 @@
       <label for="hora">Hora del turno:</label>
       <input type="time" id="hora" required>
 
-      <button type="submit">Reservar Turno</button>
+      <label for="motivo">Motivo de la consulta:</label>
+      <input type="text" id="motivo" required>
+
+      <!-- Botón de submit con ID -->
+      <button type="submit" id="submitBtn">Reservar Turno</button>
+      
+      <!-- Botón de cancelar edición -->
+      <button type="button" id="cancelBtn" style="display:none;">Cancelar</button>
+
     </form>
 
     <h2>Lista de Turnos</h2>

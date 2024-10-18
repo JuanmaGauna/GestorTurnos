@@ -55,4 +55,24 @@ body {
     margin: 10px 0;
     border-radius: 4px;
   }
+  button {
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
   
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button[type="button"] {
+    background-color: #dc3545;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #c82333;
+  }
+    
