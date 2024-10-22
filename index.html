@@ -1,48 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestor de Turnos</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de turnos - Pantalla principal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Gestor de Turnos</h1>
-    <form id="turnoForm">
-
-      <input type="hidden" id="editIndex" value="-1"> <!-- Campo oculto para saber si estamos editando -->
-
-      <label for="dni">Dni:</label>
-      <input type="text" id="dni" required>
-
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" required>
-
-      <label for="apellido">Apellido:</label>
-      <input type="text" id="apellido" required>
-
-      <label for="fecha">Fecha:</label>
-      <input type="date" id="fecha" required>
-
-      <label for="hora">Hora del turno:</label>
-      <input type="time" id="hora" required>
-
-      <label for="motivo">Motivo de la consulta:</label>
-      <input type="text" id="motivo" required>
-
-      <!-- Botón de submit con ID -->
-      <button type="submit" id="submitBtn">Reservar Turno</button>
-      
-      <!-- Botón de cancelar edición -->
-      <button type="button" id="cancelBtn" style="display:none;">Cancelar</button>
-
-    </form>
-
-    <h2>Lista de Turnos</h2>
-    <ul id="listaTurnos"></ul>
-  </div>
-
-  <script src="app.js"></script>
+    <!-- Pantalla principal -->
+     <div class="main-container">
+        <h1>Gestor de turnos</h1>
+        <!-- Contenedor del logo y registro del profesional -->
+        <div class="logo-registro-container">
+            <img src="img/logoPrincipal.jpeg" alt="logoPrincipal" class="logo">
+            <div class="registro-profesional">
+                <p class="leyenda">Primera vez aquí? regístrate y gestiona todos los turnos de una manera ágil y simple.
+                </p>
+                <button id="RegistrarmeBtn">Registrarme</button>
+            </div>
+        </div>
+        <!-- Seccion de ingreso -->
+         <div class="ingreso-container">
+            <h2>Ingreso</h2>
+            <div class="ingreso-buttons">
+                <button id="adminBtn">Administrador</button>
+                <button id="consultaBtn">Consulta turno</button>
+            </div>
+         </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
